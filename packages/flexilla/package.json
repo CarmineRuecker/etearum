@@ -1,0 +1,81 @@
+{
+  "name": "@flexilla/flexilla",
+  "private": false,
+  "version": "2.0.1",
+  "type": "module",
+  "description": "A set of unstyled interactive components for building interactive, and customizable user interfaces. Open-Source",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/lib.umd.cjs",
+  "module": "./dist/lib.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/lib.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/lib.umd.js"
+      }
+    },
+    "./flexilla.css": "./dist/flexilla.css",
+    "./dropdown.css": "./dist/dropdown.css",
+    "./modal.css": "./dist/modal.css",
+    "./offcanvas.css": "./dist/offcanvas.css",
+    "./tabs.css": "./dist/tabs.css",
+    "./tooltip.css": "./dist/tooltip.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "!vite.config.ts",
+    "!.gitignore",
+    "!tsconfig.json",
+    "!biome.js"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && cat src/types-declaration/*.d.ts > dist/index.d.ts",
+    "preview": "vite preview",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.1",
+    "@flexilla/accordion": "latest",
+    "@flexilla/auto-resize-area": "latest",
+    "@flexilla/collapse": "latest",
+    "@flexilla/custom-range": "latest",
+    "@flexilla/dismissible": "latest",
+    "@flexilla/dropdown": "latest",
+    "@flexilla/modal": "latest",
+    "@flexilla/offcanvas": "latest",
+    "@flexilla/tabs": "latest",
+    "@flexilla/tooltip": "latest",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "keywords": [
+    "Flexilla",
+    "interactive component",
+    "components library",
+    "ts",
+    "js",
+    "ui component",
+    "interactive",
+    "open-source"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unify-ui-dev/flexilla"
+  },
+  "bugs": {
+    "url": "https://github.com/unify-ui-dev/flexilla/issues"
+  },
+  "license": "MIT",
+  "author": "johnkat-mj"
+}

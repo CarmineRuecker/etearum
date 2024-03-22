@@ -1,0 +1,65 @@
+{
+  "name": "@flexilla/custom-range",
+  "private": false,
+  "version": "2.0.1",
+  "type": "module",
+  "description": "A lightweight JavaScript component to add range indicator to a custom range component",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/custom-range.umd.js",
+  "module": "./dist/custom-range.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/custom-range.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/custom-range.umd.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "!vite.config.ts",
+    "!.gitignore",
+    "!tsconfig.json",
+    "!biome.js",
+    "Flexilla"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "keywords": [
+    "custom-range",
+    "js",
+    "ts",
+    "component",
+    "interactive",
+    "intercative component"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unify-ui-dev/flexilla"
+  },
+  "bugs": {
+    "url": "https://github.com/unify-ui-dev/flexilla/issues"
+  },
+  "license": "MIT",
+  "author": "johnkat-mj"
+}

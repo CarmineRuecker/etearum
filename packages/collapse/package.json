@@ -1,0 +1,66 @@
+{
+  "name": "@flexilla/collapse",
+  "private": false,
+  "version": "2.0.1",
+  "type": "module",
+  "description": "A versatile and interactive collapse component for creating collapsible sections in web applications, conserving space and improving user experience.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/collapse.umd.js",
+  "module": "./dist/collapse.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/collapse.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/collapse.umd.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "!vite.config.ts",
+    "!.gitignore",
+    "!tsconfig.json",
+    "!biome.js"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "keywords": [
+    "collapse",
+    "collapsible",
+    "js",
+    "ts",
+    "component",
+    "interactive",
+    "intercative component",
+    "Flexilla"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unify-ui-dev/flexilla"
+  },
+  "bugs": {
+    "url": "https://github.com/unify-ui-dev/flexilla/issues"
+  },
+  "license": "MIT",
+  "author": "johnkat-mj"
+}
